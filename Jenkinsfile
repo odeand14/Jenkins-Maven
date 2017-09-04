@@ -13,7 +13,10 @@ pipeline {
             }
             steps{
                 sh('mvn clean install')
+
                 mystep("Test")
+
+
             }
         }
     }
