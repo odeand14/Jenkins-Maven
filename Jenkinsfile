@@ -1,3 +1,6 @@
+@library("jenkins shared library")_
+
+
 pipeline {
     agent any
     stages{
@@ -11,6 +14,7 @@ pipeline {
             }
             steps{
                 sh('mvn clean install')
+                mystep("Test")
             }
         }
     }
